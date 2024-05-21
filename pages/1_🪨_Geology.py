@@ -6,7 +6,7 @@ import leafmap.foliumap as leafmap
 
 st.set_page_config(
     page_title="Bedrock geology of the Arabian Peninsula",
-    page_icon="",
+    page_icon="🪨",
     layout="wide"
     )
 
