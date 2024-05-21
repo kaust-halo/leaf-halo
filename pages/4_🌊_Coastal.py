@@ -41,7 +41,7 @@ options='''{
         fillColor: color,
         fill: true,
         weight: 1,
-        color: "white",
+        color: "#f74370",
         opacity: 1,
       };
     }
