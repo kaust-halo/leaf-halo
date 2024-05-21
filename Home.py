@@ -11,7 +11,7 @@ st.set_page_config(
 
 xyz_layers = st.secrets["xyz"]
 
-st.title("KAUST-HALO data")
+st.title("")
 
 year = 2023
 
@@ -29,6 +29,8 @@ m = leafmap.Map(
 MiniMap(zoom_level_offset=-9, position="bottomleft").add_to(m)
 
 optical = xyz_layers["optical"].replace("YYYY", str(year))
+ndvi = xyz_layers["ndvi"].replace("YYYY", str(year))
+
 
 m.add_tile_layer(
     url=optical,
@@ -36,6 +38,13 @@ m.add_tile_layer(
     attribution="Landsat, KAUST-HALO",
     max_native_zoom=13,
     shown = True
+)
+m.add_tile_layer(
+    url=ndvi,
+    name=f"{year} maximum NDVI",
+    attribution="Landsat, KAUST-HALO",
+    max_native_zoom=13,
+    shown = False
 )
 m.to_streamlit(height=700)
 
