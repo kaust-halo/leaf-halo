@@ -33,6 +33,7 @@ MiniMap(zoom_level_offset=-9, position="bottomleft").add_to(m)
 mangroves = pbf["mangroves"]
 
 options='''{
+  "maxNativeZoom":14,
   "vectorTileLayerStyles": {
     "mangroves": function(f) {
       var color = "#f74370"; 

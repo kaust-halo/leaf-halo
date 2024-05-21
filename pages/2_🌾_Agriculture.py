@@ -48,6 +48,7 @@ m.add_tile_layer(
 )
 
 options_fieldUse='''{
+  "maxNativeZoom":13,
   "vectorTileLayerStyles": {
     "2015ETm3": function(f) {
       var color = "#ffffcc"; 
@@ -76,6 +77,7 @@ options_fieldUse='''{
 }'''
 
 options_et='''{
+  "maxNativeZoom":13,
   "vectorTileLayerStyles": {
     "2015ETm3": function(f) {
       var color = "#86340c"; 
